@@ -1,0 +1,6 @@
+{
+  "name": "BiniT ArtVista Gallery",
+  "description": "Modern, curated art and photography marketplace featuring original artworks, photography, video posts, digital downloads, and custom commissions.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
