@@ -1,0 +1,78 @@
+export const translations = {
+  en: {
+    galleryName: 'BiniT ArtVista Gallery',
+    tagline: 'Curated works for collectors, artists, and cultural institutions.',
+    nav: {
+      home: 'Home',
+      artGallery: 'Art Gallery',
+      photography: 'Photography',
+      videoPosts: 'Video Posts',
+      digitalDownloads: 'Digital Downloads',
+      commissions: 'Commissions',
+      about: 'About',
+      profile: 'Profile',
+      messages: 'Messages',
+      cart: 'Cart',
+    },
+    hero: {
+      eyebrow: 'Curated modern art',
+      title: 'Artworks and stories shaped by culture, memory, and contemporary vision.',
+      subtitle: 'Discover original paintings, photography, digital works, and custom commissions from a globally minded art community.',
+      exploreGallery: 'Explore the Gallery',
+      postVideo: 'Post a Video',
+      commissionArtist: 'Commission an Artist',
+    },
+    filters: {
+      all: 'All',
+      searchPlaceholder: 'Search artworks or artists',
+    },
+    video: {
+      title: 'Behind the easel & lens',
+      subtitle: 'Follow artists, process, and stories behind each collection.',
+    },
+    commissions: {
+      title: 'Commission a custom work',
+      subtitle: 'Tell us your vision and we will connect you with the right artist.',
+      submitRequest: 'Submit Request',
+      successMsg: 'Your commission request was successfully sent.',
+    },
+  },
+  am: {
+    galleryName: 'ቢኒት አርትቪስታ ጋለሪ',
+    tagline: 'ለሰብሳቢዎች፣ አርቲስቶች እና ባህል ተቋማት የተሰበሰቡ ስራዎች።',
+    nav: {
+      home: 'መነሻ',
+      artGallery: 'የጥበብ ማዕከል',
+      photography: 'ፎቶግራፍ',
+      videoPosts: 'ቪዲዮ ልጥፎች',
+      digitalDownloads: 'ዲጂታል ውርዶች',
+      commissions: 'ተቀጣሪ ሥራዎች',
+      about: 'ስለ እኛ',
+      profile: 'መገለጫ',
+      messages: 'መልእክቶች',
+      cart: 'ጋሪ',
+    },
+    hero: {
+      eyebrow: 'የተሰበሰበ ዘመናዊ ጥበብ',
+      title: 'በባህል፣ በታሪክ እና በዘመናዊ እይታ የተለዩ ስራዎች እና ታሪኮች።',
+      subtitle: 'የመጀመሪያ ቁርጥራጮችን፣ ፎቶግራፍ፣ ዲጂታል ስራዎችን እና እንደ አርቲስት የተለዩ ሥራዎችን ያግኙ።',
+      exploreGallery: 'ጋለሪን ያስሱ',
+      postVideo: 'ቪዲዮ ያስገቡ',
+      commissionArtist: 'አርቲስት ያዙ',
+    },
+    filters: {
+      all: 'ሁሉም',
+      searchPlaceholder: 'ስራዎችን ወይም አርቲስቶችን ይፈልጉ',
+    },
+    video: {
+      title: 'ከኢሜጂ እና ሌንስ ጀርባ',
+      subtitle: 'አርቲስቶችን፣ ሂደቱን እና ታሪኮቹን ይከታተሉ።',
+    },
+    commissions: {
+      title: 'ብጁ ሥራ ያዙ',
+      subtitle: 'ራዕዩን ይግለጹ፤ በአግባቡ የሚስማማ አርቲስት እንያዝናለን።',
+      submitRequest: 'ጥያቄ ያስገቡ',
+      successMsg: 'የሥራ ጥያቄዎ በተሳካ ሁኔታ ተልኳል።',
+    },
+  },
+};
