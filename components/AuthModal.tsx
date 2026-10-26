@@ -61,7 +61,7 @@ export const AuthModal: React.FC = () => {
       country: 'Ethiopia',
       isArtist: true,
       artistBio: artist.bio,
-      socialLinks: artist.socials
+      socialLinks: artist.socialLinks
     };
 
     setCurrentUser(switchedUser);

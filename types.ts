@@ -15,8 +15,10 @@ export interface Artwork {
   id: string;
   title: string;
   titleAm?: string;
+  descriptionAm?: string;
   artistName: string;
   artistId?: string;
+  artistAvatar?: string;
   category: string;
   type: 'physical' | 'photography' | 'digital';
   medium?: string;
@@ -29,6 +31,7 @@ export interface Artwork {
   description?: string;
   availability?: string;
   isRecent?: boolean;
+  isFeatured?: boolean;
   views?: number;
   likes?: number;
   badge?: string;
@@ -49,6 +52,8 @@ export interface Artist {
   verified?: boolean;
   artworksCount?: number;
   location?: string;
+  coverImage?: string;
+  salesCount?: number;
   socialLinks?: Record<string, string>;
 }
 
@@ -56,9 +61,12 @@ export interface VideoPost {
   id: string;
   title: string;
   titleAm?: string;
+  descriptionAm?: string;
   artistName: string;
   artistId?: string;
+  artistAvatar?: string;
   category: string;
+  tags?: string[];
   thumbnailUrl: string;
   videoUrl?: string;
   description?: string;
@@ -85,6 +93,8 @@ export interface User {
   avatar: string;
   phone?: string;
   address?: string;
+  city?: string;
+  country?: string;
   billingAddress?: string;
   isArtist?: boolean;
   artistBio?: string;
@@ -136,4 +146,5 @@ export interface CommissionRequest {
   deadline: string;
   status: string;
   createdAt: string;
+  referenceImageUrl?: string;
 }

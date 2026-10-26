@@ -327,7 +327,7 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children 
       shipping,
       total,
       status: hasPhysical ? 'Processing' : 'Ready for Download',
-      shippingAddress: address || currentUser.address,
+      shippingAddress: address || currentUser.address || '',
       trackingNumber: hasPhysical ? `ART-${Math.floor(100000 + Math.random() * 900000)}` : undefined,
       paymentMethod
     };

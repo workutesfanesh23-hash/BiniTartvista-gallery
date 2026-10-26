@@ -1,1 +1,1 @@
-name: BiniT ArtVista Gallery
+/// <reference types="vite/client" />

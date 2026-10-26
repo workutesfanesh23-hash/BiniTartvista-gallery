@@ -12,8 +12,8 @@ export const PhotographyPage: React.FC = () => {
 
   const filtered = photoArtworks.filter(photo => {
     const matchesType = photoType === 'All' || 
-      (photoType === 'Monochrome' && photo.description.toLowerCase().includes('monochrome')) ||
-      (photoType === 'Landscape' && photo.description.toLowerCase().includes('landscape')) ||
+      (photoType === 'Monochrome' && photo.description?.toLowerCase().includes('monochrome')) ||
+      (photoType === 'Landscape' && photo.description?.toLowerCase().includes('landscape')) ||
       (photoType === 'Limited Edition' && photo.edition?.includes('Limited'));
 
     const matchesSearch = !searchQuery || 
@@ -26,7 +26,7 @@ export const PhotographyPage: React.FC = () => {
   const sorted = [...filtered].sort((a, b) => {
     if (sortBy === 'price-asc') return a.price - b.price;
     if (sortBy === 'price-desc') return b.price - a.price;
-    return b.year - a.year;
+    return (b.year ?? 0) - (a.year ?? 0);
   });
 
   return (

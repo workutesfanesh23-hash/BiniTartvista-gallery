@@ -50,7 +50,7 @@ export const GalleryPage: React.FC = () => {
   const sorted = [...filtered].sort((a, b) => {
     if (sortBy === 'price-asc') return a.price - b.price;
     if (sortBy === 'price-desc') return b.price - a.price;
-    return b.year - a.year;
+    return (b.year ?? 0) - (a.year ?? 0);
   });
 
   const handleCreateArtwork = (e: React.FormEvent) => {

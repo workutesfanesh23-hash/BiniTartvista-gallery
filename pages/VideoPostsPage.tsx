@@ -170,11 +170,11 @@ export const VideoPostsPage: React.FC = () => {
   const handleOpenEdit = (video: VideoPost) => {
     setEditingPostId(video.id);
     setTitle(video.title);
-    setDescription(video.description);
+    setDescription(video.description ?? '');
     setCategory(video.category);
-    setTagsInput(video.tags.join(', '));
+    setTagsInput(video.tags?.join(', ') ?? '');
     setThumbnailUrl(video.thumbnailUrl);
-    setPreviewVideoUrl(video.videoUrl);
+    setPreviewVideoUrl(video.videoUrl ?? '');
     setIsUploadModalOpen(true);
   };
 
@@ -336,7 +336,7 @@ export const VideoPostsPage: React.FC = () => {
                 <div className="flex items-center justify-between gap-3 pb-3 border-b border-stone-800">
                   <button
                     onClick={() => {
-                      setSelectedArtistId(activeVideo.artistId);
+                      setSelectedArtistId(activeVideo.artistId ?? null);
                       setActivePage('artist-profile');
                     }}
                     className="flex items-center gap-2.5 group cursor-pointer text-left"

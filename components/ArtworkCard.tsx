@@ -39,7 +39,7 @@ export const ArtworkCard: React.FC<ArtworkCardProps> = ({
 
   const handleArtistClick = (e: React.MouseEvent) => {
     e.stopPropagation();
-    setSelectedArtistId(artwork.artistId);
+    setSelectedArtistId(artwork.artistId ?? null);
     setActivePage('artist-profile');
   };
 

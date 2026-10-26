@@ -107,18 +107,18 @@ export const ArtistProfilePage: React.FC = () => {
 
                 {/* Social Links */}
                 <div className="flex flex-wrap items-center justify-center sm:justify-start gap-2 pt-2 text-[11px] font-mono">
-                  {artist.socials.telegram && (
-                    <a href={artist.socials.telegram} target="_blank" rel="noreferrer" className="text-amber-800 hover:underline">
+                  {artist.socialLinks?.telegram && (
+                    <a href={artist.socialLinks.telegram} target="_blank" rel="noreferrer" className="text-amber-800 hover:underline">
                       Telegram ↗
                     </a>
                   )}
-                  {artist.socials.instagram && (
-                    <a href={artist.socials.instagram} target="_blank" rel="noreferrer" className="text-amber-800 hover:underline">
+                  {artist.socialLinks?.instagram && (
+                    <a href={artist.socialLinks.instagram} target="_blank" rel="noreferrer" className="text-amber-800 hover:underline">
                       Instagram ↗
                     </a>
                   )}
-                  {artist.socials.youtube && (
-                    <a href={artist.socials.youtube} target="_blank" rel="noreferrer" className="text-amber-800 hover:underline">
+                  {artist.socialLinks?.youtube && (
+                    <a href={artist.socialLinks.youtube} target="_blank" rel="noreferrer" className="text-amber-800 hover:underline">
                       YouTube ↗
                     </a>
                   )}
@@ -162,7 +162,7 @@ export const ArtistProfilePage: React.FC = () => {
             </div>
             <div>
               <span className="font-mono text-lg sm:text-xl font-bold text-stone-900 tabular-nums">
-                {artist.salesCount}
+                {artist.salesCount ?? 0}
               </span>
               <span className="text-[11px] text-stone-500 block uppercase tracking-wider">Acquisitions</span>
             </div>

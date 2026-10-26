@@ -40,12 +40,17 @@ export const ArtworkDetailModal: React.FC = () => {
   const displayDesc = (language === 'am' && selectedArtwork.descriptionAm) ? selectedArtwork.descriptionAm : selectedArtwork.description;
 
   const handleArtistClick = () => {
-    setSelectedArtistId(selectedArtwork.artistId);
+    setSelectedArtistId(selectedArtwork.artistId ?? null);
     setSelectedArtwork(null);
     setActivePage('artist-profile');
   };
 
   const handleDirectInquiry = () => {
+    if (!selectedArtwork.artistId) {
+      showToast(language === 'am' ? 'የአርቲስቱ መለያ አልተገኘም።' : 'This artist is not available for direct inquiry.');
+      return;
+    }
+
     sendMessage(
       selectedArtwork.artistId,
       `Hello! I am inquiring about "${selectedArtwork.title}" (${selectedArtwork.edition || selectedArtwork.category}, $${selectedArtwork.price}). Is this currently available for private viewing or immediate shipment?`
