@@ -2,6 +2,11 @@
   "name": "binit-artvista-gallery",
   "private": true,
   "version": "1.0.0",
+  "packageManager": "npm@10.9.2",
+  "engines": {
+    "node": ">=20.0.0",
+    "npm": ">=10.0.0"
+  },
   "type": "module",
   "scripts": {
     "dev": "vite --host 0.0.0.0 --port 3000",
